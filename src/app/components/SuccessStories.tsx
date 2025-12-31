@@ -11,7 +11,6 @@ const cardVariants = {
     transition: {
       delay: i * 0.2,
       duration: 0.8,
-      ease: [0.42, 0, 0.58, 1],
     },
   }),
 };
