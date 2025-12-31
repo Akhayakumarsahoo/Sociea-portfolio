@@ -78,7 +78,7 @@ export default function ClientTestimonials() {
               </h3>
 
               {/* Quote */}
-              <p className="text-gray-700 md:col-span-2">"{item.quote}"</p>
+              <p className="text-gray-700 md:col-span-2">{item.quote}</p>
 
               {/* Row Divider */}
               <div className="md:col-span-3 mt-8 sm:mt-10 h-px w-full bg-gray-200" />
