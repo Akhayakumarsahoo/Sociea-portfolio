@@ -13,16 +13,16 @@ export default function Hero() {
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
+          transition={{ duration: 0.8, ease: [0.42, 0, 0.58, 1] }}
         >
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bold leading-tight">
-            SCALE YOUR BRAND ON DIGITAL PLATFORM WITH <br />{" "}
-            <span className="text-[#1368D6] text-3xl sm:text-4xl md:text-5xl">
+            SCALE YOUR BRAND ON DIGITAL PLATFORM WITH{" "}
+            <span className="text-[#1368D6] font-extrabold text-3xl sm:text-4xl md:text-5xl">
               SOCEIA
             </span>
           </h1>
 
-          <p className="text-base sm:text-lg text-gray-600 mt-4 sm:mt-6 max-w-md">
+          <p className="text-base sm:text-2xl text-gray-600 mt-4 sm:mt-6 max-w-md">
             your gateway to social media success
           </p>
 
@@ -43,7 +43,7 @@ export default function Hero() {
           initial={{ opacity: 0, x: 60 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.9, ease: "easeOut" }}
+          transition={{ duration: 0.9, ease: [0.42, 0, 0.58, 1] }}
           className="relative w-full h-[300px] sm:h-[400px] md:h-[500px]"
         >
           <Image

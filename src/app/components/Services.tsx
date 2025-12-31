@@ -10,7 +10,6 @@ const serviceVariants = {
     transition: {
       delay: i * 0.25,
       duration: 0.8,
-      ease: "easeOut",
     },
   }),
 };
@@ -27,9 +26,13 @@ export default function Services() {
           transition={{ duration: 0.8 }}
           className="max-w-4xl"
         >
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 sm:mb-8 md:mb-10">Services</h2>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 sm:mb-8 md:mb-10">
+            Services
+          </h2>
 
-          <p className="text-xs sm:text-sm text-gray-600 mb-3 sm:mb-4">What We Offer</p>
+          <p className="text-xs sm:text-sm text-gray-600 mb-3 sm:mb-4">
+            What We Offer
+          </p>
 
           <p className="text-base sm:text-lg text-gray-700">
             Explore our range of services tailored to meet your social media
@@ -49,13 +52,16 @@ export default function Services() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
+            transition={{ ease: [0.42, 0, 0.58, 1] as const }}
             className="grid grid-cols-1 md:grid-cols-2 gap-12 sm:gap-16 md:gap-20 items-center"
           >
             <div>
               <p className="text-xs sm:text-sm text-gray-600 mb-3 sm:mb-4">
                 Social Media Management
               </p>
-              <h3 className="text-2xl sm:text-3xl font-medium mb-4 sm:mb-6">Strategic Planning</h3>
+              <h3 className="text-2xl sm:text-3xl font-medium mb-4 sm:mb-6">
+                Strategic Planning
+              </h3>
               <p className="text-gray-700 leading-relaxed max-w-xl">
                 Our social media management services include content creation,
                 community engagement, analytics, and strategy development. We
@@ -79,7 +85,9 @@ export default function Services() {
             className="grid grid-cols-1 md:grid-cols-2 gap-12 sm:gap-16 md:gap-20 items-center"
           >
             <div>
-              <p className="text-xs sm:text-sm text-gray-600 mb-3 sm:mb-4">Digital Marketing</p>
+              <p className="text-xs sm:text-sm text-gray-600 mb-3 sm:mb-4">
+                Digital Marketing
+              </p>
               <h3 className="text-2xl sm:text-3xl font-medium mb-4 sm:mb-6">
                 Comprehensive Solutions
               </h3>
@@ -106,8 +114,12 @@ export default function Services() {
             className="grid grid-cols-1 md:grid-cols-2 gap-12 sm:gap-16 md:gap-20 items-center"
           >
             <div>
-              <p className="text-xs sm:text-sm text-gray-600 mb-3 sm:mb-4">Branding</p>
-              <h3 className="text-2xl sm:text-3xl font-medium mb-4 sm:mb-6">Brand Development</h3>
+              <p className="text-xs sm:text-sm text-gray-600 mb-3 sm:mb-4">
+                Branding
+              </p>
+              <h3 className="text-2xl sm:text-3xl font-medium mb-4 sm:mb-6">
+                Brand Development
+              </h3>
               <p className="text-gray-700 leading-relaxed max-w-xl">
                 Our branding services focus on creating a unique identity for
                 your brand, including logo design, brand messaging, and visual
@@ -135,7 +147,7 @@ function AnimatedDots() {
     <motion.div
       initial={{ opacity: 0, scale: 0.8 }}
       whileInView={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.6, ease: "easeOut" }}
+      transition={{ duration: 0.6, ease: [0.42, 0, 0.58, 1] }}
       className="w-24 h-24 sm:w-32 sm:h-32 rounded-full border border-gray-400 flex items-center justify-center ml-auto"
     >
       <div className="w-2 h-2 bg-[#1368D6] rounded-full animate-ping" />

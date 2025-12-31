@@ -25,7 +25,7 @@ export default function About() {
             initial={{ opacity: 0, x: -60 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
+            transition={{ duration: 0.8, ease: [0.42, 0, 0.58, 1] }}
             className="relative w-full h-[300px] sm:h-[360px] md:h-[420px]"
           >
             <Image
@@ -41,7 +41,7 @@ export default function About() {
             initial={{ opacity: 0, x: 60 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
+            transition={{ duration: 0.8, ease: [0.42, 0, 0.58, 1] }}
           >
             <p className="uppercase tracking-widest text-xl sm:text-2xl md:text-3xl text-gray-600 mb-4 sm:mb-6">
               Our Mission

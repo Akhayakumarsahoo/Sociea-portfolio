@@ -11,7 +11,7 @@ const cardVariants = {
     transition: {
       delay: i * 0.2,
       duration: 0.8,
-      ease: "easeOut",
+      ease: [0.42, 0, 0.58, 1],
     },
   }),
 };
@@ -53,7 +53,9 @@ export default function SuccessStories() {
             className="text-center"
           >
             <CircleImage src="/image-3.png" />
-            <h3 className="text-xl sm:text-2xl font-medium mt-6 sm:mt-8">Brand Transformation</h3>
+            <h3 className="text-xl sm:text-2xl font-medium mt-6 sm:mt-8">
+              Brand Transformation
+            </h3>
             <p className="text-gray-600 mt-2">Apparel Company</p>
 
             <div className="mt-10 sm:mt-14 flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-8">
@@ -74,7 +76,9 @@ export default function SuccessStories() {
             className="text-center"
           >
             <CircleImage src="/image-4.png" />
-            <h3 className="text-xl sm:text-2xl font-medium mt-6 sm:mt-8">Viral Campaign</h3>
+            <h3 className="text-xl sm:text-2xl font-medium mt-6 sm:mt-8">
+              Viral Campaign
+            </h3>
             <p className="text-gray-600 mt-2">Beauty Firm</p>
 
             <div className="mt-10 sm:mt-14 flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-8">
@@ -95,7 +99,9 @@ export default function SuccessStories() {
             className="text-center"
           >
             <CircleImage src="/image-5.png" />
-            <h3 className="text-xl sm:text-2xl font-medium mt-6 sm:mt-8">Rebranding Success</h3>
+            <h3 className="text-xl sm:text-2xl font-medium mt-6 sm:mt-8">
+              Rebranding Success
+            </h3>
             <p className="text-gray-600 mt-2">Culinary Service</p>
 
             <div className="mt-10 sm:mt-14 flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-8">
@@ -116,7 +122,9 @@ export default function SuccessStories() {
             className="text-center"
           >
             <CircleImage src="/image-6.png" />
-            <h3 className="text-xl sm:text-2xl font-medium mt-6 sm:mt-8">Community Building</h3>
+            <h3 className="text-xl sm:text-2xl font-medium mt-6 sm:mt-8">
+              Community Building
+            </h3>
             <p className="text-gray-600 mt-2">Pet Shop</p>
 
             <div className="mt-10 sm:mt-14 flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-8">
@@ -145,7 +153,9 @@ function CircleImage({ src }: { src: string }) {
 function CircleStat({ value }: { value: string }) {
   return (
     <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full border-2 border-[#1368D6] flex items-center justify-center bg-white">
-      <span className="text-xl sm:text-2xl font-semibold text-gray-900">{value}</span>
+      <span className="text-xl sm:text-2xl font-semibold text-gray-900">
+        {value}
+      </span>
     </div>
   );
 }
