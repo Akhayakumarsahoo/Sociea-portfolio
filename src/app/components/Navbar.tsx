@@ -36,7 +36,7 @@ export default function Navbar() {
               className="rounded-full"
             />
             <span className="text-gray-900 text-xl sm:text-2xl font-extrabold tracking-wide">
-              SOCEIA
+              SOCIEA
             </span>
           </Link>
 

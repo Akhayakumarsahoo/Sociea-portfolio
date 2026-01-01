@@ -18,7 +18,7 @@ export default function Hero() {
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bold leading-tight">
             SCALE YOUR BRAND ON DIGITAL PLATFORM WITH{" "}
             <span className="text-[#1368D6] font-extrabold text-3xl sm:text-4xl md:text-5xl">
-              SOCEIA
+              SOCIEA
             </span>
           </h1>
 
