@@ -6,17 +6,17 @@ const testimonials = [
   {
     name: "John Doe",
     quote:
-      "Working with Storriz has been a game-changer for my social media presence. Their innovative strategies have significantly boosted my online engagement and brand visibility.",
+      "Working with Sociea has been a game-changer for my social media presence. Their innovative strategies have significantly boosted my online engagement and brand visibility.",
   },
   {
     name: "Emily Smith",
     quote:
-      "I highly recommend Storriz for anyone looking to enhance their social media reach. The team’s dedication and expertise have helped me achieve remarkable growth in a short period of time.",
+      "I highly recommend Sociea for anyone looking to enhance their social media reach. The team’s dedication and expertise have helped me achieve remarkable growth in a short period of time.",
   },
   {
     name: "Amit Patel",
     quote:
-      "Storriz has been instrumental in transforming my social media marketing efforts. Their tailored approach and attention to detail have led to a substantial increase in leads and conversions.",
+      "Sociea has been instrumental in transforming my social media marketing efforts. Their tailored approach and attention to detail have led to a substantial increase in leads and conversions.",
   },
 ];
 

@@ -30,7 +30,7 @@ export default function About() {
           >
             <Image
               src="/image-2.png"
-              alt="About Storriz"
+              alt="About Sociea"
               fill
               className="object-cover rounded-lg"
             />

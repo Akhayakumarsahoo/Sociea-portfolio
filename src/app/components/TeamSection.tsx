@@ -7,22 +7,22 @@ const teamMembers = [
   {
     name: "Bishmay Sahoo",
     role: "Marketing Lead",
-    image: "/team.png",
+    image: "/bishmaySahoo.jpeg",
   },
   {
     name: "Satyaprakash",
     role: "Videographer",
-    image: "/team.png",
+    image: "/satyaprakash.jpeg",
   },
   {
-    name: "Satyaprakash",
+    name: "Subhashree",
     role: "Content Creator",
-    image: "/team.png",
+    image: "subhashree.jpeg",
   },
   {
     name: "Chinmay",
     role: "Video Editer",
-    image: "/team.png",
+    image: "/chinmay.jpeg",
   },
 ];
 
