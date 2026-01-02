@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const plans = [
   {
@@ -91,9 +92,11 @@ export default function PackagesPage() {
               ))}
             </ul>
 
-            <button className="mt-6 sm:mt-8 w-full py-3 rounded-full bg-[#1368D6] hover:bg-[#0F5AB8] transition font-medium text-white">
-              Choose Plan
-            </button>
+            <Link href="contact">
+              <button className="mt-6 sm:mt-8 cursor-pointer w-full py-3 rounded-full bg-[#1368D6] hover:bg-[#0F5AB8] transition font-medium text-white">
+                Choose Plan
+              </button>
+            </Link>
           </motion.div>
         ))}
       </div>

@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const serviceVariants = {
   hidden: { opacity: 0, y: 40 },
@@ -131,6 +132,16 @@ export default function Services() {
             <AnimatedDots />
           </motion.div>
         </div>
+        <Link href="packages">
+          <motion.button
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4, duration: 0.6 }}
+            className="mt-8 sm:mt-10 px-6 sm:px-8 py-3 sm:py-4 rounded-full bg-[#1368D6] text-white font-medium hover:bg-[#0F5AB8] transition cursor-pointer text-sm sm:text-base"
+          >
+            Our Packages
+          </motion.button>
+        </Link>
       </div>
     </section>
   );

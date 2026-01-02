@@ -4,7 +4,18 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Instagram, Linkedin, Twitter, Facebook } from "lucide-react";
+
+const socialLinks = [
+  { icon: Facebook, href: "#", label: "Facebook" },
+  { icon: Twitter, href: "#", label: "Twitter" },
+  { icon: Linkedin, href: "#", label: "LinkedIn" },
+  {
+    icon: Instagram,
+    href: "https://www.instagram.com/thesociea",
+    label: "Instagram",
+  },
+];
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -53,6 +64,24 @@ export default function Navbar() {
               </li>
             ))}
           </ul>
+
+          {/* Social Icons */}
+          <div className="flex items-center gap-4">
+            {socialLinks.map((social) => {
+              const Icon = social.icon;
+              return (
+                <a
+                  key={social.label}
+                  href={social.href}
+                  aria-label={social.label}
+                  className="hover:opacity-80 transition-opacity"
+                  target="_blank"
+                >
+                  <Icon className="w-4 h-4" />
+                </a>
+              );
+            })}
+          </div>
 
           {/* Mobile Menu Button */}
           <button

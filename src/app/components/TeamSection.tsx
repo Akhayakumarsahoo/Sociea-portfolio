@@ -1,7 +1,6 @@
 "use client";
-
-import Image from "next/image";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const teamMembers = [
   {
@@ -17,7 +16,7 @@ const teamMembers = [
   {
     name: "Subhashree",
     role: "Content Creator",
-    image: "subhashree.jpeg",
+    image: "/subhashree.jpeg",
   },
   {
     name: "Chinmay",
@@ -71,7 +70,7 @@ export default function TeamSection() {
                 src={member.image}
                 alt={member.name}
                 fill
-                className="object-cover rounded-lg"
+                className="object-contain "
               />
             </div>
 
