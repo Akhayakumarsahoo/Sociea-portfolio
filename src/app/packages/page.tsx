@@ -6,7 +6,7 @@ import Link from "next/link";
 const plans = [
   {
     name: "Basic",
-    price: "₹15,000 / month",
+    price: "₹18,000 / month",
     highlight: false,
     features: [
       "Instagram Management Only",
@@ -15,10 +15,16 @@ const plans = [
       "Strategic posting + SEO captions & hashtags",
       "1 Free Influencer Collaboration (1st month)",
     ],
+    notIncluded: [
+      "YouTube Management",
+      "Facebook & LinkedIn Support",
+      "Advanced SEO Strategy",
+      "Monthly Influencer Collaboration",
+    ],
   },
   {
     name: "Standard",
-    price: "₹22,000 / month",
+    price: "₹26,000 / month",
     highlight: true,
     features: [
       "Instagram + YouTube Management",
@@ -27,10 +33,16 @@ const plans = [
       "SEO-optimized captions, titles & hashtags",
       "1 Free Influencer Collaboration (1st month)",
     ],
+    notIncluded: [
+      "Facebook Management",
+      "LinkedIn Management",
+      "Monthly Influencer Collaboration",
+      "Advanced SEO Strategy Level 2",
+    ],
   },
   {
     name: "Premium",
-    price: "₹28,000 / month",
+    price: "₹32,000 / month",
     highlight: false,
     features: [
       "Instagram, YouTube, Facebook & LinkedIn",
@@ -39,12 +51,13 @@ const plans = [
       "Advanced SEO strategy + maximum reach",
       "1 Free Influencer Collaboration every month",
     ],
+    notIncluded: [],
   },
 ];
 
 export default function PackagesPage() {
   return (
-    <section className="bg-white text-gray-900 min-h-screen px-4 sm:px-6 md:px-12 lg:px-20 py-16 sm:py-20 md:py-24 pt-24 sm:pt-28">
+    <section className="bg-white text-gray-900 min-h-screen px-4 sm:px-6 md:px-12 lg:px-20 py-24">
       {/* Heading */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
@@ -63,7 +76,7 @@ export default function PackagesPage() {
       </motion.div>
 
       {/* Pricing Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 md:gap-10 mt-12 sm:mt-16 max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-14 max-w-7xl mx-auto">
         {plans.map((plan, index) => (
           <motion.div
             key={plan.name}
@@ -71,32 +84,52 @@ export default function PackagesPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: index * 0.1 }}
-            className={`rounded-2xl border p-6 sm:p-8 ${
+            className={`rounded-2xl border p-8 ${
               plan.highlight
                 ? "border-[#1368D6] shadow-[0_0_25px_rgba(19,104,214,0.3)] bg-gray-50"
                 : "border-gray-300"
             }`}
           >
-            <h2 className="text-xl sm:text-2xl font-bold">{plan.name}</h2>
+            <h2 className="text-2xl font-bold">{plan.name}</h2>
 
-            <p className="text-[#1368D6] text-lg sm:text-xl font-semibold mt-3">
+            <p className="text-[#1368D6] text-xl font-semibold mt-2">
               {plan.price}
             </p>
 
-            <ul className="mt-6 space-y-2 sm:space-y-3 text-gray-700">
+            <Link href="/contact">
+              <button className="mt-8 w-full py-3 rounded-full bg-[#1368D6] hover:bg-[#0F5AB8] transition font-medium text-white cursor-pointer">
+                Choose Plan
+              </button>
+            </Link>
+            {/* Included Features */}
+            <ul className="mt-6 space-y-3 text-gray-700">
               {plan.features.map((feature) => (
-                <li key={feature} className="flex gap-2 text-sm sm:text-base">
-                  <span className="text-[#1368D6]">✔</span>
+                <li key={feature} className="flex gap-2">
+                  <span className="text-green-500">✔</span>
                   {feature}
                 </li>
               ))}
             </ul>
 
-            <Link href="contact">
-              <button className="mt-6 sm:mt-8 cursor-pointer w-full py-3 rounded-full bg-[#1368D6] hover:bg-[#0F5AB8] transition font-medium text-white">
-                Choose Plan
-              </button>
-            </Link>
+            {/* Not Included Features */}
+            {plan.notIncluded.length > 0 && (
+              <>
+                <div className="h-px bg-gray-300 my-6" />
+
+                <p className="text-sm font-semibold text-gray-500">
+                  Not Included in this plan:
+                </p>
+
+                <ul className="mt-3 space-y-2 text-gray-500">
+                  {plan.notIncluded.map((item) => (
+                    <li key={item} className="flex gap-2 opacity-70">
+                      <span className="text-red-500">✖</span>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </>
+            )}
           </motion.div>
         ))}
       </div>

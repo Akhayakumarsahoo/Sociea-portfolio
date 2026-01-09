@@ -4,17 +4,22 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 const clients = [
-  { name: "mtvs.news", logo: "/next.svg" },
-  { name: "Skripton", logo: "/next.svg" },
-  { name: "Energator", logo: "/next.svg" },
-  { name: "Gazeit", logo: "/next.svg" },
-  { name: "Travelo", logo: "/next.svg" },
-  { name: "GLMP.IT", logo: "/next.svg" },
+  { name: "Cheesecake Masters", logo: "/Clients/chees-cake-name.svg" },
+  { name: "Puffique", logo: "/Clients/Puffique Logo.png" },
+  {
+    name: "Next Era Green Energies",
+    logo: "/Clients/NextEraGreenEnergies.png",
+  },
+  { name: "AB", logo: "/Clients/AB.jpg" },
+  { name: "Snak'd", logo: "/Clients/snackd.jpg" },
+  { name: "balasore", logo: "/Clients/balasore.jpg" },
+  { name: "trikaya", logo: "/Clients/trikaya.png" },
+  { name: "carzone", logo: "/Clients/carzone.jpg" },
 ];
 
 export default function OurClients() {
   return (
-    <section className="relative w-full bg-gradient-to-r from-gray-900 to-[#1368D6] py-16 sm:py-20 md:py-24 text-white">
+    <section className="relative w-full bg-gradient-to-r from-gray-50 to-[#1368D6] py-16 sm:py-20 md:py-24 text-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Heading */}
         <motion.h2
@@ -66,7 +71,7 @@ export default function OurClients() {
                 alt={client.name}
                 width={180}
                 height={80}
-                className="opacity-80 grayscale transition hover:opacity-100 hover:grayscale-0"
+                className=""
               />
             </motion.div>
           ))}

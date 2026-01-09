@@ -51,11 +51,10 @@ export default function SuccessStories() {
             viewport={{ once: true }}
             className="text-center"
           >
-            <CircleImage src="/image-3.png" />
+            <CircleImage src="/food.png" />
             <h3 className="text-xl sm:text-2xl font-medium mt-6 sm:mt-8">
-              Brand Transformation
+              Food Company
             </h3>
-            <p className="text-gray-600 mt-2">Apparel Company</p>
 
             <div className="mt-10 sm:mt-14 flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-8">
               <p className="text-gray-600 text-center sm:text-left">
@@ -74,11 +73,10 @@ export default function SuccessStories() {
             viewport={{ once: true }}
             className="text-center"
           >
-            <CircleImage src="/image-4.png" />
+            <CircleImage src="/solar.png" />
             <h3 className="text-xl sm:text-2xl font-medium mt-6 sm:mt-8">
-              Viral Campaign
+              Solar Green Company
             </h3>
-            <p className="text-gray-600 mt-2">Beauty Firm</p>
 
             <div className="mt-10 sm:mt-14 flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-8">
               <p className="text-gray-600 text-center sm:text-left">
@@ -97,11 +95,10 @@ export default function SuccessStories() {
             viewport={{ once: true }}
             className="text-center"
           >
-            <CircleImage src="/image-5.png" />
+            <CircleImage src="/shopping_mall.png" />
             <h3 className="text-xl sm:text-2xl font-medium mt-6 sm:mt-8">
-              Rebranding Success
+              Shopping Mall
             </h3>
-            <p className="text-gray-600 mt-2">Culinary Service</p>
 
             <div className="mt-10 sm:mt-14 flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-8">
               <p className="text-gray-600 text-center sm:text-left">
@@ -120,11 +117,10 @@ export default function SuccessStories() {
             viewport={{ once: true }}
             className="text-center"
           >
-            <CircleImage src="/image-6.png" />
+            <CircleImage src="/car-rent.png" />
             <h3 className="text-xl sm:text-2xl font-medium mt-6 sm:mt-8">
-              Community Building
+              Rental Company
             </h3>
-            <p className="text-gray-600 mt-2">Pet Shop</p>
 
             <div className="mt-10 sm:mt-14 flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-8">
               <p className="text-gray-600 text-center sm:text-left">
