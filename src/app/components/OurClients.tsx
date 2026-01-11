@@ -8,7 +8,7 @@ const clients = [
   { name: "Puffique", logo: "/Clients/Puffique Logo.jpg" },
   {
     name: "Next Era Green Energies",
-    logo: "/Clients/NextEraGreenEnergies.png",
+    logo: "/Clients/nextEra.png",
   },
   { name: "AB", logo: "/Clients/AB.jpg" },
   { name: "Snak'd", logo: "/Clients/snackd.jpg" },
