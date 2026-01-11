@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const clients = [
   { name: "Cheesecake Masters", logo: "/Clients/chees-cake-name.svg" },
-  { name: "Puffique", logo: "/Clients/Puffique Logo.png" },
+  { name: "Puffique", logo: "/Clients/Puffique Logo.jpg" },
   {
     name: "Next Era Green Energies",
     logo: "/Clients/NextEraGreenEnergies.png",
@@ -19,7 +19,7 @@ const clients = [
 
 export default function OurClients() {
   return (
-    <section className="relative w-full bg-gradient-to-r from-gray-50 to-[#1368D6] py-16 sm:py-20 md:py-24 text-white">
+    <section className="relative w-full py-16 sm:py-20 md:py-24 text-black">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Heading */}
         <motion.h2
@@ -35,7 +35,7 @@ export default function OurClients() {
         {/* Divider */}
         <div className="my-6 sm:my-8 flex items-center justify-center gap-3 sm:gap-4">
           <span className="h-px w-20 sm:w-32 bg-white/40" />
-          <span className="text-xs sm:text-sm uppercase tracking-widest text-white/70">
+          <span className="text-xs sm:text-sm uppercase tracking-widest text-black/70">
             Trusted Partners
           </span>
           <span className="h-px w-20 sm:w-32 bg-white/40" />
@@ -47,7 +47,7 @@ export default function OurClients() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.2 }}
-          className="mx-auto max-w-4xl text-base sm:text-lg md:text-xl lg:text-2xl text-center text-white/80 px-4"
+          className="mx-auto max-w-4xl text-base sm:text-lg md:text-xl lg:text-2xl text-center text-black/80 px-4"
         >
           We are proud to have collaborated with a diverse range of clients,
           from startups to established brands. Our client-centric approach and

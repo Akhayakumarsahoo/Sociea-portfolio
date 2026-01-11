@@ -6,22 +6,22 @@ const teamMembers = [
   {
     name: "Bishmay Sahoo",
     role: "Marketing Lead",
-    image: "/bishmaySahoo.jpeg",
+    image: "/team/bishmaySahoo.jpeg",
   },
   {
     name: "Satyaprakash",
     role: "Videographer",
-    image: "/satyaprakash.jpeg",
+    image: "/team/satyaprakash.jpeg",
   },
   {
     name: "Subhashree",
     role: "Content Creator",
-    image: "/subhashree.jpeg",
+    image: "/team/subhashree.jpeg",
   },
   {
     name: "Chinmay",
-    role: "Video Editer",
-    image: "/chinmay.jpeg",
+    role: "Video Editor",
+    image: "/team/chinmay.jpeg",
   },
 ];
 
@@ -55,7 +55,7 @@ export default function TeamSection() {
       <div className="border-t border-gray-300 my-12 sm:my-16 md:my-24" />
 
       {/* TEAM GRID */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 sm:gap-14 md:gap-16 max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 sm:gap-14 md:gap-16 max-w-6xl">
         {teamMembers.map((member, index) => (
           <motion.div
             key={index}
@@ -63,18 +63,20 @@ export default function TeamSection() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: index * 0.15 }}
             viewport={{ once: true }}
-            className="text-center"
+            className="text-center flex flex-col items-center justify-center"
           >
-            <div className="relative w-full h-[280px] sm:h-[320px] md:h-[360px] mb-4 sm:mb-6">
+            <div className="relative  w-[280px] h-[280px] sm:h-[320px]sm:w-[320px] md:w-[360px] md:h-[360px] mb-4 sm:mb-6">
               <Image
                 src={member.image}
                 alt={member.name}
                 fill
-                className="object-contain "
+                className="object-cover rounded-full"
               />
             </div>
 
-            <h3 className="text-lg sm:text-xl font-semibold">{member.name}</h3>
+            <h3 className="text-lg sm:text-xl text-center font-semibold">
+              {member.name}
+            </h3>
 
             <p className="text-gray-600 mt-1">{member.role}</p>
           </motion.div>

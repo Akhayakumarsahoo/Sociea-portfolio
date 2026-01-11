@@ -4,12 +4,12 @@ import { motion } from "framer-motion";
 
 const testimonials = [
   {
-    name: "John Doe",
+    name: "Parikshit Mimani",
     quote:
       "Working with Sociea has been a game-changer for my social media presence. Their innovative strategies have significantly boosted my online engagement and brand visibility.",
   },
   {
-    name: "Emily Smith",
+    name: "Shuvam Somani",
     quote:
       "I highly recommend Sociea for anyone looking to enhance their social media reach. The team’s dedication and expertise have helped me achieve remarkable growth in a short period of time.",
   },
