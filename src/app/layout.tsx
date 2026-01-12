@@ -19,6 +19,16 @@ export const metadata: Metadata = {
   title: "Sociea",
   description:
     "Odisha's leading 360° marketing agency transforming brands into strong digital identities. We create meaningful connections, build trust, and drive real growth beyond promotion.",
+  icons: {
+    icon: "/sociea.webp",
+  },
+  openGraph: {
+    title: "Sociea",
+    description:
+      "Odisha's leading 360° marketing agency transforming brands into strong digital identities. We create meaningful connections, build trust, and drive real growth beyond promotion.",
+    images: "/sociea.webp",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
