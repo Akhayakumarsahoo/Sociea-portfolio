@@ -23,10 +23,10 @@ export default function Hero() {
           </h1>
 
           <p className="text-base sm:text-2xl text-gray-600 mt-4 sm:mt-6 max-w-md">
-            your gateway to social media success
+            Your Gateway To Social Media Success
           </p>
 
-          <Link href="contact">
+          <Link href="packages">
             <motion.button
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}

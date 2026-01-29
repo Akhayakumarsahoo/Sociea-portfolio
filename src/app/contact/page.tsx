@@ -35,9 +35,9 @@ export default function ContactPage() {
         transition={{ duration: 0.8 }}
         className="max-w-3xl"
       >
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold">Get in Touch</h1>
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold">Reach Out to Us</h1>
 
-        <p className="mt-4 sm:mt-6 text-gray-600">Reach Out to Us Today</p>
+        {/* <p className="mt-4 sm:mt-6 text-gray-600">Reach Out to Us Today</p> */}
 
         <p className="mt-4 sm:mt-6 text-base sm:text-lg text-gray-700 leading-relaxed">
           We are always available to answer your questions or discuss your
@@ -50,7 +50,7 @@ export default function ContactPage() {
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.2 }}
-        className="mt-16 sm:mt-20 md:mt-24 max-w-5xl"
+        className="mt-16 max-w-5xl"
         onSubmit={handleSubmit}
       >
         {/* ROW 1 */}

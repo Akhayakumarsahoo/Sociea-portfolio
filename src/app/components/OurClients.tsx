@@ -15,6 +15,7 @@ const clients = [
   { name: "balasore", logo: "/Clients/balasore.jpg" },
   { name: "trikaya", logo: "/Clients/trikaya.png" },
   { name: "carzone", logo: "/Clients/carzone.jpg" },
+  {name: "DJ Associiate",logo:"/Clients/djassociiates.jpeg"}
 ];
 
 export default function OurClients() {
