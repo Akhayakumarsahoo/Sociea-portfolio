@@ -15,8 +15,8 @@ const plans = [
       "Strategic posting + SEO captions & hashtags",
     ],
     notIncluded: [
-      "YouTube Management",
-      "Facebook & LinkedIn Support",
+      "YouTube & Facebook Management",
+      " Meta Ads Campaign",
       "Advanced SEO Strategy",
     ],
   },
@@ -32,7 +32,7 @@ const plans = [
     ],
     notIncluded: [
       "Facebook Management",
-      "LinkedIn Management",
+      "Meta Ads Campaign",
       "Advanced SEO Strategy Level 2",
     ],
   },
@@ -41,7 +41,7 @@ const plans = [
     price: "₹32,000 / month",
     highlight: false,
     features: [
-      "Instagram, YouTube, Facebook & LinkedIn",
+      "Instagram, YouTube, Facebook & Meta Ads Campaign",
       "20 UGC reels/videos/shorts per month",
       "10 Designed Feed Posts per platform",
       "Advanced SEO strategy + maximum reach",
