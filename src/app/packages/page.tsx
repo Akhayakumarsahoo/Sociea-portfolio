@@ -6,12 +6,12 @@ import Link from "next/link";
 const plans = [
   {
     name: "Basic",
-    price: "₹18,000 / month",
+    price: "₹20,000 / month",
     highlight: false,
     features: [
       "Instagram Management Only",
       "20 UGC reels/videos per month",
-      "10 Designed Feed Posts per month",
+      "5 Designed Feed Posts per month",
       "Strategic posting + SEO captions & hashtags",
     ],
     notIncluded: [
@@ -22,12 +22,12 @@ const plans = [
   },
   {
     name: "Standard",
-    price: "₹26,000 / month",
+    price: "₹28,000 / month",
     highlight: true,
     features: [
       "Instagram + YouTube Management",
       "20 UGC reels/videos/shorts per month",
-      "10 Designed Feed Posts per month",
+      "5 Designed Feed Posts per month",
       "SEO-optimized captions, titles & hashtags",
     ],
     notIncluded: [
@@ -38,12 +38,12 @@ const plans = [
   },
   {
     name: "Premium",
-    price: "₹32,000 / month",
+    price: "₹34,000 / month",
     highlight: false,
     features: [
       "Instagram, YouTube, Facebook & Meta Ads Campaign",
       "20 UGC reels/videos/shorts per month",
-      "10 Designed Feed Posts per platform",
+      "5 Designed Feed Posts per platform",
       "Advanced SEO strategy + maximum reach",
     ],
     notIncluded: [],
