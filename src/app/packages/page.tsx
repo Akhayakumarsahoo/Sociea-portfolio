@@ -6,7 +6,7 @@ import Link from "next/link";
 const plans = [
   {
     name: "Basic",
-    price: "₹20,000 / month",
+    // price: "₹20,000 / month",
     highlight: false,
     features: [
       "Instagram Management Only",
@@ -22,7 +22,7 @@ const plans = [
   },
   {
     name: "Standard",
-    price: "₹28,000 / month",
+    // price: "₹28,000 / month",
     highlight: true,
     features: [
       "Instagram + YouTube Management",
@@ -38,7 +38,7 @@ const plans = [
   },
   {
     name: "Premium",
-    price: "₹34,000 / month",
+    // price: "₹34,000 / month",
     highlight: false,
     features: [
       "Instagram, YouTube, Facebook & Meta Ads Campaign",
@@ -87,9 +87,9 @@ export default function PackagesPage() {
           >
             <h2 className="text-2xl font-bold">{plan.name}</h2>
 
-            <p className="text-[#1368D6] text-xl font-semibold mt-2">
+            {/* <p className="text-[#1368D6] text-xl font-semibold mt-2">
               {plan.price}
-            </p>
+            </p> */}
 
             <Link href="/contact">
               <button className="mt-8 w-full py-3 rounded-full bg-[#1368D6] hover:bg-[#0F5AB8] transition font-medium text-white cursor-pointer">

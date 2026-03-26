@@ -46,7 +46,7 @@ export default function Navbar() {
               height={40}
               className="rounded-full"
             />
-            <span className="text-gray-900 text-xl sm:text-2xl font-extrabold tracking-wide">
+            <span className="text-gray-900 text-xl sm:text-4xl font-bold ">
               SOCIEA
             </span>
           </Link>
