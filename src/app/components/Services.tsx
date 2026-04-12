@@ -17,7 +17,7 @@ const serviceVariants = {
 
 export default function Services() {
   return (
-    <section className="bg-white text-gray-900 py-16 sm:py-24 md:py-32">
+    <section className="bg-white text-gray-900 py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div
@@ -57,7 +57,7 @@ export default function Services() {
             className="grid grid-cols-1 md:grid-cols-2 gap-12 sm:gap-16 md:gap-20 items-center"
           >
             <div>
-              <p className="text-xs sm:text-sm text-gray-600 mb-3 sm:mb-4">
+              <p className="text-gray-600 mb-3 sm:mb-4">
                 Social Media Management
               </p>
               <h3 className="text-2xl sm:text-3xl font-medium mb-4 sm:mb-6">
@@ -71,7 +71,7 @@ export default function Services() {
               </p>
             </div>
 
-            <AnimatedDots />
+            <div className="hidden md:block"><AnimatedDots /></div>
           </motion.div>
 
           <Divider />
@@ -86,7 +86,7 @@ export default function Services() {
             className="grid grid-cols-1 md:grid-cols-2 gap-12 sm:gap-16 md:gap-20 items-center"
           >
             <div>
-              <p className="text-xs sm:text-sm text-gray-600 mb-3 sm:mb-4">
+              <p className="text-gray-600 mb-3 sm:mb-4">
                 Digital Marketing
               </p>
               <h3 className="text-2xl sm:text-3xl font-medium mb-4 sm:mb-6">
@@ -100,7 +100,7 @@ export default function Services() {
               </p>
             </div>
 
-            <AnimatedDots />
+          <div className="hidden md:block"><AnimatedDots /></div>
           </motion.div>
 
           <Divider />
@@ -115,7 +115,7 @@ export default function Services() {
             className="grid grid-cols-1 md:grid-cols-2 gap-12 sm:gap-16 md:gap-20 items-center"
           >
             <div>
-              <p className="text-xs sm:text-sm text-gray-600 mb-3 sm:mb-4">
+              <p className="text-gray-600 mb-3 sm:mb-4">
                 Branding
               </p>
               <h3 className="text-2xl sm:text-3xl font-medium mb-4 sm:mb-6">
@@ -129,7 +129,7 @@ export default function Services() {
               </p>
             </div>
 
-            <AnimatedDots />
+            <div className="hidden md:block"><AnimatedDots /></div>
           </motion.div>
         </div>
         <Link href="packages">

@@ -36,7 +36,7 @@ const clients = [
 
 export default function OurClients() {
   return (
-    <section className="relative w-full py-16 sm:py-20 md:py-24 text-black">
+    <section className="relative w-full py-16 text-black">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Heading */}
         <motion.h2
@@ -86,8 +86,8 @@ export default function OurClients() {
               <Image
                 src={client.logo}
                 alt={client.name}
-                width={180}
-                height={80}
+                width={100}
+                height={50}
                 className=""
               />
             </motion.div>
