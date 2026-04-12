@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function About() {
   return (
-    <section className="bg-gray-50 text-gray-900 py-16 sm:py-20 md:py-28">
+    <section className="bg-[#F5F5F7] text-gray-900 py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Title */}
         <motion.h2

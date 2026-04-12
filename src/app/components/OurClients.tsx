@@ -4,18 +4,34 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 const clients = [
-  { name: "Cheesecake Masters", logo: "/Clients/chees-cake-name.svg" },
+  { name: "Bharat Masala", logo: "/Clients/bharatMasala.png" },
+  { name: "Cheesecake Masters", logo: "/Clients/cheesecake_masters.svg" },
   { name: "Puffique", logo: "/Clients/Puffique Logo.jpg" },
+  { name: "Nawab Biriyani", logo: "/Clients/nawabBiriyani.png" },
+  { name: "Flash Now", logo: "/Clients/flash_now.png" },
+  { name: "JNG Homes", logo: "/Clients/JNG_homes.jpg" },
+  { name: "Kikai", logo: "/Clients/kikai.jpeg" },
+   { name: "SIP & Score", logo: "/Clients/sip&Score.jpeg" },
+  { name: "Pahadi", logo: "/Clients/pahadi.jpeg" },
+  { name: "RK Studio", logo: "/Clients/RK_Studio.png" },
+  { name: "Pickle Park", logo: "/Clients/pickle_park.jpeg" },
+  { name: "La Pino'z Pizza", logo: "/Clients/la_Pinoz_pizza.jpeg" },
+  { name: "Origanoz", logo: "/Clients/origanoz.png" },
+  { name: "GP Constructions", logo: "/Clients/GP.jpg" },
+  { name: "Barg N Furs", logo: "/Clients/barkNfurs.png" },
+  { name: "36 China Town", logo: "/Clients/36ChinaTown.jpeg" },
+  { name: "Shree Radha Groups", logo: "/Clients/shree_radha.jpg" },
   {
     name: "Next Era Green Energies",
     logo: "/Clients/nextEra.png",
   },
-  { name: "AB", logo: "/Clients/AB.jpg" },
-  { name: "Snak'd", logo: "/Clients/snackd.jpg" },
-  { name: "balasore", logo: "/Clients/balasore.jpg" },
-  { name: "trikaya", logo: "/Clients/trikaya.png" },
-  { name: "carzone", logo: "/Clients/carzone.jpg" },
-  {name: "DJ Associiate",logo:"/Clients/djassociiates.jpeg"}
+  { name: "DBC", logo: "/Clients/DBC.jpeg" },
+  { name: "Apna Bazar", logo: "/Clients/" },
+   { name: "Snak'd", logo: "/Clients/snackd.jpg" },
+   { name: "trikaya", logo: "/Clients/trikaya.png" },
+   { name: "balasore", logo: "/Clients/balasore.jpg" },
+    { name: "carzone", logo: "/Clients/carzone.jpg" },
+  // { name: "DJ Associiate", logo: "/Clients/djassociiates.jpeg" },
 ];
 
 export default function OurClients() {

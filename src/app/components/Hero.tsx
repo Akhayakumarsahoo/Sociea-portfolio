@@ -15,7 +15,7 @@ export default function Hero() {
           viewport={{ once: true }}
           transition={{ duration: 0.8, ease: [0.42, 0, 0.58, 1] }}
         >
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bold leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-medium leading-tight">
             SCALE YOUR BRAND ON DIGITAL PLATFORM WITH{" "}
             <span className="text-[#1368D6] font-extrabold text-3xl sm:text-4xl md:text-5xl">
               SOCIEA

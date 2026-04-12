@@ -42,8 +42,8 @@ export default function Navbar() {
             <Image
               src="/sociea.webp"
               alt="sociea"
-              width={40}
-              height={40}
+              width={46}
+              height={46}
               className="rounded-full"
             />
             <span className="text-gray-900 text-xl sm:text-4xl font-bold ">

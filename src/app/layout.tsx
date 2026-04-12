@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-// import { Roboto } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "./components/Navbar";
@@ -9,9 +8,21 @@ import { Analytics } from "@vercel/analytics/next";
 
 const myFont = localFont({
   src: [
-    { path: "./fonts/Helvetica.ttf", weight: "400", style: "normal" },
-    { path: "./fonts/Helvetica.ttf", weight: "500", style: "normal" },
-    { path: "./fonts/Helvetica-Bold.ttf", weight: "700", style: "normal" },
+    {
+      path: "./fonts/SFPRODISPLAYREGULAR.otf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "./fonts/SFPRODISPLAYMEDIUM.otf",
+      weight: "500",
+      style: "medium",
+    },
+    {
+      path: "./fonts/SFPRODISPLAYBOLD.otf",
+      weight: "700",
+      style: "bold",
+    },
   ],
   variable: "--font-myfont",
   display: "swap",

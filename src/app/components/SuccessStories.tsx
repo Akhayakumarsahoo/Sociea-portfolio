@@ -17,31 +17,28 @@ const cardVariants = {
 
 export default function SuccessStories() {
   return (
-    <section className="bg-gray-50 text-gray-900 py-16 sm:py-24 md:py-32">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="bg-gray-50 text-gray-900 pt-16">
+      <div className="">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="max-w-3xl"
+          className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
         >
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">
             Our Success Stories
           </h2>
 
-          <p className="text-base sm:text-lg text-gray-700">
+          <p className="text-base sm:text-lg text-gray-700 pb-16">
             Discover how we've transformed our clients' online presence with
             impactful social media strategies
           </p>
         </motion.div>
 
-        {/* Divider */}
-        <div className="my-12 sm:my-16 md:my-20 h-px bg-gray-300" />
-
         {/* Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-y-16 sm:gap-y-24 md:gap-y-32 gap-x-12 sm:gap-x-16 md:gap-x-20">
+        <div className="bg-[#F5F5F7] py-16 grid grid-cols-1 md:grid-cols-2 gap-y-16 gap-x-12">
           {/* Card 1 */}
           <motion.div
             custom={0}
@@ -52,9 +49,7 @@ export default function SuccessStories() {
             className="text-center"
           >
             <CircleImage src="/food.png" />
-            <h3 className="text-xl sm:text-2xl font-medium mt-6 sm:mt-8">
-              Food Company
-            </h3>
+            <h3 className="text-xl sm:text-2xl font-medium">Food Company</h3>
 
             <div className="mt-10 sm:mt-14 flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-8">
               <p className="text-gray-600 text-center sm:text-left">
@@ -74,7 +69,7 @@ export default function SuccessStories() {
             className="text-center"
           >
             <CircleImage src="/solar.png" />
-            <h3 className="text-xl sm:text-2xl font-medium mt-6 sm:mt-8">
+            <h3 className="text-xl sm:text-2xl font-medium">
               Solar Green Company
             </h3>
 
@@ -96,9 +91,7 @@ export default function SuccessStories() {
             className="text-center"
           >
             <CircleImage src="/shopping_mall.png" />
-            <h3 className="text-xl sm:text-2xl font-medium mt-6 sm:mt-8">
-              Shopping Mall
-            </h3>
+            <h3 className="text-xl sm:text-2xl font-medium">Shopping Mall</h3>
 
             <div className="mt-10 sm:mt-14 flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-8">
               <p className="text-gray-600 text-center sm:text-left">
@@ -118,9 +111,7 @@ export default function SuccessStories() {
             className="text-center"
           >
             <CircleImage src="/car-rent.png" />
-            <h3 className="text-xl sm:text-2xl font-medium mt-6 sm:mt-8">
-              Rental Company
-            </h3>
+            <h3 className="text-xl sm:text-2xl font-medium">Rental Company</h3>
 
             <div className="mt-10 sm:mt-14 flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-8">
               <p className="text-gray-600 text-center sm:text-left">
