@@ -9,19 +9,19 @@ import { Analytics } from "@vercel/analytics/next";
 const myFont = localFont({
   src: [
     {
-      path: "./fonts/SFPRODISPLAYREGULAR.otf",
+      path: "./fonts/SFProDisplay-Regular.woff2",
       weight: "400",
       style: "normal",
     },
     {
-      path: "./fonts/SFPRODISPLAYMEDIUM.otf",
+      path: "./fonts/SFProDisplay-Medium.woff2",
       weight: "500",
-      style: "medium",
+      style: "normal",
     },
     {
-      path: "./fonts/SFPRODISPLAYBOLD.otf",
+      path: "./fonts/SFProDisplay-Bold.woff2",
       weight: "700",
-      style: "bold",
+      style: "normal",
     },
   ],
   variable: "--font-myfont",
