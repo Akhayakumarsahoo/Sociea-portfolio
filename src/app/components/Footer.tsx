@@ -64,7 +64,7 @@ export default function Footer() {
             </Link>
 
             <p className="pt-4 sm:pt-6 text-xs sm:text-sm text-white/60">
-              © 2025 by Sociea.
+              © {new Date().getFullYear()} by Sociea.
             </p>
           </div>
         </div>

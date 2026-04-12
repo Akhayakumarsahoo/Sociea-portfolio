@@ -29,6 +29,7 @@ const myFont = localFont({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://sociea.in"),
   title: "Sociea",
   description:
     "Odisha's leading 360° marketing agency transforming brands into strong digital identities. We create meaningful connections, build trust, and drive real growth beyond promotion.",
