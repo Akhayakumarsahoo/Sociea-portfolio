@@ -15,7 +15,7 @@ const clients = [
   { name: "Pahadi", logo: "/Clients/pahadi.jpeg" },
   { name: "RK Studio", logo: "/Clients/RK_Studio.png" },
   { name: "Pickle Park", logo: "/Clients/pickle_park.jpeg" },
-  { name: "La Pino'z Pizza", logo: "/Clients/la_Pinoz_Pizza.jpeg" },
+  { name: "La Pino'z Pizza", logo: "/Clients/La_Pinoz_Pizza.jpeg" },
   { name: "Origanoz", logo: "/Clients/origanoz.png" },
   { name: "GP Constructions", logo: "/Clients/GP.jpg" },
   { name: "Barg N Furs", logo: "/Clients/barkNfurs.png" },
