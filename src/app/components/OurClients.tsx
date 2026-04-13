@@ -73,7 +73,7 @@ export default function OurClients() {
         </motion.p>
 
         {/* Logos Grid */}
-        <div className="mt-12 sm:mt-16 grid grid-cols-2 sm:grid-cols-3 gap-6 sm:gap-8 md:gap-10">
+        <div className="mt-12 sm:mt-16 grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-8 md:gap-10">
           {clients.map((client, index) => (
             <motion.div
               key={client.name}
