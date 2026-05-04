@@ -10,7 +10,7 @@ const plans = [
     highlight: false,
     features: [
       "Instagram Management Only",
-      "20 UGC reels/videos per month",
+      "15 UGC reels/videos per month",
       "5 Designed Feed Posts per month",
       "Strategic posting + SEO captions & hashtags",
     ],
@@ -26,7 +26,7 @@ const plans = [
     highlight: true,
     features: [
       "Instagram + YouTube Management",
-      "20 UGC reels/videos/shorts per month",
+      "15 UGC reels/videos/shorts per month",
       "5 Designed Feed Posts per month",
       "SEO-optimized captions, titles & hashtags",
     ],
@@ -42,7 +42,7 @@ const plans = [
     highlight: false,
     features: [
       "Instagram, YouTube, Facebook & Meta Ads Campaign",
-      "20 UGC reels/videos/shorts per month",
+      "15 UGC reels/videos/shorts per month",
       "5 Designed Feed Posts per platform",
       "Advanced SEO strategy + maximum reach",
     ],
