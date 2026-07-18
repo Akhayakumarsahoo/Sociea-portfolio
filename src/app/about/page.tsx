@@ -1,72 +1,76 @@
 "use client";
 
 import { motion } from "framer-motion";
-import TeamSection from "../components/TeamSection";
+import { Sparkles, Eye, Target, ArrowRight } from "lucide-react";
+import GlassCard3D from "../components/ui/GlassCard3D";
+import Button3D from "../components/ui/Button3D";
 import StrategySection from "../components/StrategySection";
+import TeamSection from "../components/TeamSection";
 
 export default function AboutPage() {
   return (
-    <main className="min-h-screen bg-white text-gray-900 px-4 sm:px-6 md:px-10 py-16 sm:py-20 md:py-24 pt-24 sm:pt-28">
-      {/* HERO SECTION */}
-      <motion.section
-        initial={{ opacity: 0, y: 40 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        className="max-w-5xl"
-      >
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight">
-          Crafting Social Media <br /> Success
-        </h1>
+    <main className="min-h-screen bg-[#fbfbfd] pt-32 pb-24 relative overflow-hidden">
+      {/* Top Ambient Glow */}
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-blue-500/10 blur-[140px] rounded-full pointer-events-none" />
 
-        <p className="mt-12 sm:mt-16 text-xs sm:text-sm uppercase tracking-widest text-gray-600">
-          Our Digital Expertise
-        </p>
-
-        <p className="mt-4 sm:mt-6 text-gray-700 text-base sm:text-lg md:text-xl leading-relaxed">
-          Welcome to Sociea, Odisha&apos;s leading 360° marketing agency
-          dedicated to transforming brands into powerful digital identities. We
-          believe marketing isn&apos;t just about promotion, it&apos;s about
-          creating meaningful connections,building trust, and driving real
-          growth.
-        </p>
-      </motion.section>
-
-      {/* DIVIDER */}
-      <div className="border-t border-gray-300 my-12 sm:my-16 md:my-24" />
-
-      {/* VALUES / INFO SECTION */}
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-12 sm:gap-16 max-w-6xl">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        {/* Hero Banner */}
         <motion.div
-          initial={{ opacity: 0, x: -40 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="text-center max-w-3xl mx-auto mb-16 space-y-4"
         >
-          <h2 className="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4">
-            Our Vision
-          </h2>
-          <p className="text-gray-700 leading-relaxed">
-            To empower brands innovative 360° marketing strategies that drive
-            real growth, boost visibility, and build lasting customer trust.
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200/60 text-blue-700 text-xs font-semibold uppercase tracking-wider">
+            <Sparkles className="w-3.5 h-3.5" />
+            <span>Our Story & Vision</span>
+          </div>
+
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-[#1d1d1f] tracking-tight">
+            Crafting Digital <span className="text-gradient-blue">Success</span>
+          </h1>
+
+          <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
+            Welcome to Sociea, Odisha&apos;s leading 360° digital agency dedicated to transforming brands into strong online identities. We believe marketing isn&apos;t just about promotion — it&apos;s about creating meaningful connections, building trust, and driving real growth.
           </p>
+
+          <div className="pt-4 flex justify-center">
+            <Button3D href="/packages" variant="primary" size="lg" icon={<ArrowRight className="w-5 h-5" />}>
+              Explore Packages
+            </Button3D>
+          </div>
         </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, x: 40 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-        >
-          <h2 className="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4">
-            Our Mission
-          </h2>
-          <p className="text-gray-700 leading-relaxed">
-            To become Odisha&apos;s most trusted and result-driven marketing
-            agency, helping businesses grow and make a strong impact across
-            India.
-          </p>
-        </motion.div>
-      </section>
+        {/* Vision & Mission Bento Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+          <GlassCard3D glowColor="rgba(0, 113, 227, 0.15)">
+            <div className="space-y-4">
+              <div className="w-12 h-12 rounded-2xl bg-blue-50 border border-blue-100 flex items-center justify-center text-[#0071e3]">
+                <Eye className="w-6 h-6" />
+              </div>
+              <h2 className="text-2xl font-black text-[#1d1d1f]">Our Vision</h2>
+              <p className="text-gray-600 leading-relaxed text-sm">
+                To empower brands with innovative 360° digital marketing strategies that drive real growth, boost online visibility, and build lasting customer trust across India and beyond.
+              </p>
+            </div>
+          </GlassCard3D>
+
+          <GlassCard3D glowColor="rgba(99, 102, 241, 0.15)">
+            <div className="space-y-4">
+              <div className="w-12 h-12 rounded-2xl bg-indigo-50 border border-indigo-100 flex items-center justify-center text-[#0071e3]">
+                <Target className="w-6 h-6" />
+              </div>
+              <h2 className="text-2xl font-black text-[#1d1d1f]">Our Mission</h2>
+              <p className="text-gray-600 leading-relaxed text-sm">
+                To become Odisha&apos;s most trusted and result-driven marketing partner, delivering high-impact 3D visuals, strategic campaign execution, and measurable business returns.
+              </p>
+            </div>
+          </GlassCard3D>
+        </div>
+
+      </div>
+
       <StrategySection />
       <TeamSection />
     </main>

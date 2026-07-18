@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { Sparkles } from "lucide-react";
 
 const clients = [
   { name: "Bharat Masala", logo: "/Clients/bharatMasala.png" },
@@ -11,7 +12,7 @@ const clients = [
   { name: "Flash Now", logo: "/Clients/flash_now.png" },
   { name: "JNG Homes", logo: "/Clients/JNG_Homes.jpg" },
   { name: "Kikai", logo: "/Clients/kikai.jpeg" },
-   { name: "SIP & Score", logo: "/Clients/sip&Score.jpeg" },
+  { name: "SIP & Score", logo: "/Clients/sip&Score.jpeg" },
   { name: "Pahadi", logo: "/Clients/pahadi.jpeg" },
   { name: "RK Studio", logo: "/Clients/RK_Studio.png" },
   { name: "Pickle Park", logo: "/Clients/pickle_park.jpeg" },
@@ -21,79 +22,61 @@ const clients = [
   { name: "Barg N Furs", logo: "/Clients/barkNfurs.png" },
   { name: "36 China Town", logo: "/Clients/36ChinaTown.jpeg" },
   { name: "Shree Radha Groups", logo: "/Clients/shree_radha.jpg" },
-  {
-    name: "Next Era Green Energies",
-    logo: "/Clients/nextEra.png",
-  },
+  { name: "Next Era Green Energies", logo: "/Clients/nextEra.png" },
   { name: "DBC", logo: "/Clients/DBC.jpeg" },
   { name: "Apna Bazar", logo: "/Clients/AB.jpg" },
-   { name: "Snak'd", logo: "/Clients/snackd.jpg" },
-   { name: "trikaya", logo: "/Clients/trikaya.png" },
-   { name: "balasore", logo: "/Clients/balasore.jpg" },
-    { name: "carzone", logo: "/Clients/carzone.jpg" },
-  // { name: "DJ Associiate", logo: "/Clients/djassociiates.jpeg" },
+  { name: "Snak'd", logo: "/Clients/snackd.jpg" },
+  { name: "trikaya", logo: "/Clients/trikaya.png" },
+  { name: "balasore", logo: "/Clients/balasore.jpg" },
+  { name: "carzone", logo: "/Clients/carzone.jpg" },
 ];
 
 export default function OurClients() {
   return (
-    <section className="relative w-full py-16 text-black">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        {/* Heading */}
-        <motion.h2
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-center text-3xl sm:text-4xl md:text-5xl font-semibold"
-        >
-          Our Clients
-        </motion.h2>
-
-        {/* Divider */}
-        <div className="my-6 sm:my-8 flex items-center justify-center gap-3 sm:gap-4">
-          <span className="h-px w-20 sm:w-32 bg-white/40" />
-          <span className="text-xs sm:text-sm uppercase tracking-widest text-black/70">
-            Trusted Partners
-          </span>
-          <span className="h-px w-20 sm:w-32 bg-white/40" />
+    <section className="py-20 bg-[#f4f4f7] relative overflow-hidden border-y border-gray-200/60">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12 text-center">
+        
+        {/* Badge */}
+        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-gray-200 text-gray-800 text-xs font-semibold uppercase tracking-wider shadow-sm mb-4">
+          <Sparkles className="w-3.5 h-3.5 text-[#0071e3]" />
+          <span>Trusted Industry Leaders</span>
         </div>
 
-        {/* Description */}
-        <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.2 }}
-          className="mx-auto max-w-4xl text-base sm:text-lg md:text-xl lg:text-2xl text-center text-black/80 px-4"
-        >
-          We are proud to have collaborated with a diverse range of clients,
-          from startups to established brands. Our client-centric approach and
-          results-driven strategies have led to successful partnerships and
-          impactful outcomes
-        </motion.p>
-
-        {/* Logos Grid */}
-        <div className="mt-12 sm:mt-16 grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-8 md:gap-10">
-          {clients.map((client, index) => (
-            <motion.div
-              key={client.name}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
-              className="flex items-center justify-center"
-            >
-              <Image
-                src={client.logo}
-                alt={client.name}
-                width={100}
-                height={50}
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" 
-              />
-            </motion.div>
-          ))}
-        </div>
+        <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1d1d1f] tracking-tight">
+          Brands Powering Growth With <span className="text-gradient-blue">Sociea</span>
+        </h2>
       </div>
+
+      {/* Marquee Row 1 */}
+      <div className="relative w-full flex overflow-hidden py-4 mask-gradient">
+        {/* Left & Right Glass Fades */}
+        <div className="absolute top-0 bottom-0 left-0 w-24 bg-gradient-to-r from-[#f4f4f7] to-transparent z-10 pointer-events-none" />
+        <div className="absolute top-0 bottom-0 right-0 w-24 bg-gradient-to-l from-[#f4f4f7] to-transparent z-10 pointer-events-none" />
+
+        <motion.div
+          animate={{ x: ["0%", "-50%"] }}
+          transition={{ repeat: Infinity, ease: "linear", duration: 35 }}
+          className="flex items-center gap-6 shrink-0"
+        >
+          {[...clients, ...clients].map((client, idx) => (
+            <div
+              key={`${client.name}-${idx}`}
+              className="w-36 h-24 sm:w-44 sm:h-28 rounded-2xl bg-white/80 backdrop-blur-xl border border-white/90 shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 flex items-center justify-center p-4 group"
+            >
+              <div className="relative w-full h-full flex items-center justify-center">
+                <Image
+                  src={client.logo}
+                  alt={client.name}
+                  width={120}
+                  height={60}
+                  className="max-h-16 w-auto object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
+                />
+              </div>
+            </div>
+          ))}
+        </motion.div>
+      </div>
+
     </section>
   );
 }
