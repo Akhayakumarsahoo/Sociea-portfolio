@@ -134,7 +134,7 @@ export default function ContactPage() {
 
                 <div className="relative w-14 h-14 rounded-2xl overflow-hidden shadow-lg border border-white/20 animate-levitate-slow">
                   <Image
-                    src="/social-media/instagram.jfif"
+                    src="/social-media/instagram.png"
                     alt="Instagram 3D Icon"
                     fill
                     className="object-cover"

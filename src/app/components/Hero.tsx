@@ -9,7 +9,7 @@ import Button3D from "./ui/Button3D";
 const socialFloatingAssets = [
   {
     id: "instagram",
-    src: "/social-media/instagram.jfif",
+    src: "/social-media/instagram.png",
     alt: "3D Instagram Icon",
     label: "Instagram Growth",
     sub: "+240% Engagement",
@@ -20,7 +20,7 @@ const socialFloatingAssets = [
   },
   {
     id: "youtube",
-    src: "/social-media/YouTube 3d icons.jfif",
+    src: "/social-media/youtube.png",
     alt: "3D YouTube Icon",
     label: "YouTube Video SEO",
     sub: "1.2M Views",
@@ -31,7 +31,7 @@ const socialFloatingAssets = [
   },
   {
     id: "meta",
-    src: "/social-media/Meta.jfif",
+    src: "/social-media/meta.png",
     alt: "3D Meta Icon",
     label: "Meta & Facebook Ads",
     sub: "9.8x ROAS",
@@ -42,7 +42,7 @@ const socialFloatingAssets = [
   },
   {
     id: "google",
-    src: "/social-media/Google yailineilish996.jfif",
+    src: "/social-media/google.png",
     alt: "3D Google Icon",
     label: "Google Search & Ads",
     sub: "#1 Rank Targeted",
@@ -53,7 +53,7 @@ const socialFloatingAssets = [
   },
   {
     id: "likes",
-    src: "/social-media/likes.jfif",
+    src: "/social-media/likes.png",
     alt: "3D Likes Heart Icon",
     label: "Viral Likes",
     sub: "500k+ Interactions",
@@ -64,7 +64,7 @@ const socialFloatingAssets = [
   },
   {
     id: "verify",
-    src: "/social-media/verified.jfif",
+    src: "/social-media/verified.png",
     alt: "3D Verified Badge",
     label: "Verified Brand",
     sub: "Authority Status",
