@@ -53,7 +53,7 @@ export default function Footer() {
             </Link>
 
             <p className="text-gray-400 text-sm leading-relaxed max-w-sm">
-              Odisha&apos;s leading 360° digital marketing agency transforming brands into dominant online identities through 3D visual strategy and data-driven execution.
+              Odisha&apos;s leading 360° digital marketing agency transforming brands into dominant online identities through visual strategy and data-driven execution.
             </p>
 
             {/* Social Media 3D Pills */}

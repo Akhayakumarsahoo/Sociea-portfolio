@@ -63,7 +63,7 @@ export default function AboutPage() {
               </div>
               <h2 className="text-2xl font-black text-[#1d1d1f]">Our Mission</h2>
               <p className="text-gray-600 leading-relaxed text-sm">
-                To become Odisha&apos;s most trusted and result-driven marketing partner, delivering high-impact 3D visuals, strategic campaign execution, and measurable business returns.
+                To become Odisha&apos;s most trusted and result-driven marketing partner, delivering high-impact visuals, strategic campaign execution, and measurable business returns.
               </p>
             </div>
           </GlassCard3D>

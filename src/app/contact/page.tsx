@@ -73,7 +73,7 @@ export default function ContactPage() {
         {/* Content Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
           
-          {/* Left Column - Contact Details & 3D Levitating Badge */}
+          {/* Left Column - Contact Details & Levitating Badge */}
           <div className="lg:col-span-5 space-y-6">
             
             {/* Contact Card 1 */}
@@ -122,7 +122,7 @@ export default function ContactPage() {
               </div>
             </GlassCard3D>
 
-            {/* Levitating 3D Social Floating Preview */}
+            {/* Levitating Social Floating Preview */}
             <div className="relative p-6 rounded-3xl bg-gradient-to-br from-[#1d1d1f] to-[#0a0a0c] text-white overflow-hidden shadow-2xl border border-white/10">
               <div className="absolute top-0 right-0 w-32 h-32 bg-blue-500/20 rounded-full blur-2xl pointer-events-none" />
 
@@ -135,7 +135,7 @@ export default function ContactPage() {
                 <div className="relative w-14 h-14 rounded-2xl overflow-hidden shadow-lg border border-white/20 animate-levitate-slow">
                   <Image
                     src="/social-media/instagram.png"
-                    alt="Instagram 3D Icon"
+                    alt="Instagram Icon"
                     fill
                     className="object-cover"
                   />
@@ -145,7 +145,7 @@ export default function ContactPage() {
 
           </div>
 
-          {/* Right Column - 3D Contact Form */}
+          {/* Right Column - Contact Form */}
           <div className="lg:col-span-7">
             <GlassCard3D glowColor="rgba(99, 102, 241, 0.15)">
               

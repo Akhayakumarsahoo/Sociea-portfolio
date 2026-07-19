@@ -14,7 +14,7 @@ const servicesList = [
     description:
       "End-to-end management of Instagram, Facebook, LinkedIn, & YouTube. We design content calendars, interact with your audience, and maintain a high-converting digital presence.",
     features: [
-      "Custom 3D post & reel designs",
+      "Custom post & reel designs",
       "Daily engagement & comment management",
       "Monthly performance analytics & reports",
     ],
@@ -37,12 +37,12 @@ const servicesList = [
   {
     icon: Palette,
     badge: "03 / Brand Identity",
-    title: "3D Branding & Creative Studio",
+    title: "Branding & Creative Studio",
     subtitle: "Apple-Inspired Premium Aesthetics",
     description:
-      "Elevate your brand perception with custom 3D logos, sleek visual identities, typography guidelines, and luxury promotional banners.",
+      "Elevate your brand perception with custom logos, sleek visual identities, typography guidelines, and luxury promotional banners.",
     features: [
-      "3D logo rendering & motion graphics",
+      "Logo design & motion graphics",
       "Brand voice & design system",
       "High-resolution promotional assets",
     ],

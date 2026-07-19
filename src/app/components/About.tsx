@@ -39,7 +39,7 @@ export default function About() {
           </h2>
 
           <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
-            We don&apos;t just post content — we craft high-converting 3D brand experiences, strategic social narratives, and high-ROI ad campaigns.
+            We don&apos;t just post content — we craft high-converting brand experiences, strategic social narratives, and high-ROI ad campaigns.
           </p>
         </motion.div>
 
@@ -59,13 +59,13 @@ export default function About() {
                 </h3>
 
                 <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
-                  Sociea was built to bridge the gap between traditional business and modern 3D digital dominance. We combine deep market psychology with state-of-the-art visuals to turn target audiences into raving loyal customers.
+                  Sociea was built to bridge the gap between traditional business and modern digital dominance. We combine deep market psychology with state-of-the-art visuals to turn target audiences into raving loyal customers.
                 </p>
 
                 <ul className="space-y-3 pt-2">
                   {[
                     "Data-backed social media growth strategies",
-                    "High-end 3D graphic design & video animation",
+                    "High-end graphic design & video animation",
                     "Targeted performance marketing with measurable ROAS",
                   ].map((item, idx) => (
                     <li key={idx} className="flex items-center gap-3 text-sm font-semibold text-gray-800">

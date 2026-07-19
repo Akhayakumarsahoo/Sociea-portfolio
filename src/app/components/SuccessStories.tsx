@@ -39,7 +39,7 @@ const successCases = [
     image: "/car-rent.png",
     metric: "+200%",
     metricLabel: "Direct Bookings",
-    description: "3D visual show-reel strategy turning social views into instant luxury rentals.",
+    description: "Visual show-reel strategy turning social views into instant luxury rentals.",
     glow: "rgba(168, 85, 247, 0.15)",
   },
 ];

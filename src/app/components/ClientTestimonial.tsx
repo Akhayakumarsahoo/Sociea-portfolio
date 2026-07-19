@@ -9,7 +9,7 @@ const testimonials = [
     name: "Parikshit Mimani",
     role: "Business Owner",
     quote:
-      "Working with Sociea has been a game-changer for my social media presence. Their innovative 3D strategies and content execution significantly boosted our online engagement and brand visibility.",
+      "Working with Sociea has been a game-changer for my social media presence. Their innovative strategies and content execution significantly boosted our online engagement and brand visibility.",
     glow: "rgba(0, 113, 227, 0.12)",
     initial: "P",
   },

@@ -26,7 +26,7 @@ const strategies = [
   {
     icon: Film,
     title: "Daily High-Quality Reels",
-    description: "Consistent creation of engaging 3D visual shorts and reels designed to capture attention and convert viewers into customers.",
+    description: "Consistent creation of engaging visual shorts and reels designed to capture attention and convert viewers into customers.",
     glow: "rgba(236, 72, 153, 0.12)",
   },
 ];

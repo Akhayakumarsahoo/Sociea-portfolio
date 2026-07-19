@@ -10,7 +10,7 @@ const socialFloatingAssets = [
   {
     id: "instagram",
     src: "/social-media/instagram.png",
-    alt: "3D Instagram Icon",
+    alt: "Instagram Icon",
     label: "Instagram Growth",
     sub: "+240% Engagement",
     pos: "top-[-10%] left-[-5%] sm:top-[-8%] sm:left-[-8%]",
@@ -21,7 +21,7 @@ const socialFloatingAssets = [
   {
     id: "youtube",
     src: "/social-media/youtube.png",
-    alt: "3D YouTube Icon",
+    alt: "YouTube Icon",
     label: "YouTube Video SEO",
     sub: "1.2M Views",
     pos: "top-[-6%] right-[-6%] sm:top-[-4%] sm:right-[-6%]",
@@ -32,7 +32,7 @@ const socialFloatingAssets = [
   {
     id: "meta",
     src: "/social-media/meta.png",
-    alt: "3D Meta Icon",
+    alt: "Meta Icon",
     label: "Meta & Facebook Ads",
     sub: "9.8x ROAS",
     pos: "bottom-[20%] left-[-10%] sm:left-[-12%]",
@@ -43,7 +43,7 @@ const socialFloatingAssets = [
   {
     id: "google",
     src: "/social-media/google.png",
-    alt: "3D Google Icon",
+    alt: "Google Icon",
     label: "Google Search & Ads",
     sub: "#1 Rank Targeted",
     pos: "bottom-[-4%] right-[-5%] sm:bottom-[-2%] sm:right-[-6%]",
@@ -54,7 +54,7 @@ const socialFloatingAssets = [
   {
     id: "likes",
     src: "/social-media/likes.png",
-    alt: "3D Likes Heart Icon",
+    alt: "Likes Heart Icon",
     label: "Viral Likes",
     sub: "500k+ Interactions",
     pos: "bottom-[-10%] left-[15%] sm:bottom-[-8%] sm:left-[10%]",
@@ -65,7 +65,7 @@ const socialFloatingAssets = [
   {
     id: "verify",
     src: "/social-media/verified.png",
-    alt: "3D Verified Badge",
+    alt: "Verified Badge",
     label: "Verified Brand",
     sub: "Authority Status",
     pos: "top-[35%] right-[-12%] sm:right-[-14%]",
@@ -137,10 +137,10 @@ export default function Hero() {
 
             {/* Sub-description */}
             <p className="text-base sm:text-xl text-gray-600 font-normal leading-relaxed max-w-xl mx-auto lg:mx-0">
-              Your Gateway To Social Media Success. We blend Apple-inspired 3D visuals, high-impact branding, and performance ads to dominate online markets.
+              Your Gateway To Social Media Success. We blend modern visuals, high-impact branding, and performance ads to dominate online markets.
             </p>
 
-            {/* 3D Action Buttons */}
+            {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
               <Button3D
                 href="/packages"
