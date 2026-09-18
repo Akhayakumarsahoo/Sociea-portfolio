@@ -5,6 +5,7 @@ import { motion, useMotionValue, useSpring } from "framer-motion";
 import Image from "next/image";
 import { ArrowRight, Sparkles, TrendingUp, ShieldCheck, Star } from "lucide-react";
 import Button3D from "./ui/Button3D";
+import * as fpixel from "@/lib/fpixel";
 
 const socialFloatingAssets = [
   {
@@ -144,6 +145,11 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
               <Button3D
                 href="/packages"
+                onClick={() =>
+                  fpixel.event("ViewContent", {
+                    content_name: "Hero Get Started CTA",
+                  })
+                }
                 variant="primary"
                 size="lg"
                 icon={<ArrowRight className="w-5 h-5" />}
@@ -153,6 +159,11 @@ export default function Hero() {
 
               <Button3D
                 href="/contact"
+                onClick={() =>
+                  fpixel.event("Schedule", {
+                    content_name: "Hero Book Free Strategy CTA",
+                  })
+                }
                 variant="glass"
                 size="lg"
                 icon={<Sparkles className="w-5 h-5 text-[#0071e3]" />}

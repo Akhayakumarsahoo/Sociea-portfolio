@@ -86,7 +86,7 @@ export default function Button3D({
 
   if (href) {
     return (
-      <Link href={href} className={combinedClasses}>
+      <Link href={href} onClick={onClick} className={combinedClasses}>
         {content}
       </Link>
     );

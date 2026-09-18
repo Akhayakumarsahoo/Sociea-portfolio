@@ -6,6 +6,7 @@ import Image from "next/image";
 import { Sparkles, Mail, Phone, MapPin, Send, CheckCircle2, MessageSquare } from "lucide-react";
 import GlassCard3D from "../components/ui/GlassCard3D";
 import Button3D from "../components/ui/Button3D";
+import * as fpixel from "@/lib/fpixel";
 
 export default function ContactPage() {
   const [submitting, setSubmitting] = useState(false);
@@ -35,10 +36,25 @@ export default function ContactPage() {
       const result = await res.json();
       setSubmitting(false);
       setSubmitted(true);
+
+      // Track Facebook Pixel conversion events
+      fpixel.event("Lead", {
+        content_name: "Project Inquiry Form",
+        job_title: typeof data.jobTitle === "string" ? data.jobTitle : "Not specified",
+        status: "success",
+      });
+      fpixel.event("Contact", {
+        content_name: "Contact Form Submission",
+      });
     } catch (err) {
       setSubmitting(false);
       alert("Submission finished!");
       setSubmitted(true);
+
+      fpixel.event("Lead", {
+        content_name: "Project Inquiry Form (Fallback)",
+        job_title: typeof data.jobTitle === "string" ? data.jobTitle : "Not specified",
+      });
     }
   };
 
@@ -89,25 +105,33 @@ export default function ContactPage() {
                 </div>
 
                 <div className="space-y-4 pt-2 text-sm text-gray-700">
-                  <div className="flex items-center gap-3">
-                    <div className="w-9 h-9 rounded-xl bg-gray-100 flex items-center justify-center text-[#0071e3]">
+                  <a
+                    href="mailto:contact@sociea.in"
+                    onClick={() => fpixel.event("Contact", { method: "email" })}
+                    className="flex items-center gap-3 hover:opacity-80 transition group"
+                  >
+                    <div className="w-9 h-9 rounded-xl bg-gray-100 flex items-center justify-center text-[#0071e3] group-hover:bg-blue-50 transition">
                       <Mail className="w-4 h-4" />
                     </div>
                     <div>
                       <p className="text-[10px] text-gray-400 font-bold uppercase">Email Us</p>
-                      <p className="font-semibold text-gray-900">contact@sociea.in</p>
+                      <p className="font-semibold text-gray-900 group-hover:text-[#0071e3] transition">contact@sociea.in</p>
                     </div>
-                  </div>
+                  </a>
 
-                  <div className="flex items-center gap-3">
-                    <div className="w-9 h-9 rounded-xl bg-gray-100 flex items-center justify-center text-[#0071e3]">
+                  <a
+                    href="tel:+919876543210"
+                    onClick={() => fpixel.event("Contact", { method: "phone" })}
+                    className="flex items-center gap-3 hover:opacity-80 transition group"
+                  >
+                    <div className="w-9 h-9 rounded-xl bg-gray-100 flex items-center justify-center text-[#0071e3] group-hover:bg-blue-50 transition">
                       <Phone className="w-4 h-4" />
                     </div>
                     <div>
                       <p className="text-[10px] text-gray-400 font-bold uppercase">Call Agency</p>
-                      <p className="font-semibold text-gray-900">+91 98765 43210</p>
+                      <p className="font-semibold text-gray-900 group-hover:text-[#0071e3] transition">+91 98765 43210</p>
                     </div>
-                  </div>
+                  </a>
 
                   <div className="flex items-center gap-3">
                     <div className="w-9 h-9 rounded-xl bg-gray-100 flex items-center justify-center text-[#0071e3]">

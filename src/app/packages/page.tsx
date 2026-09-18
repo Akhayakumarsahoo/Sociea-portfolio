@@ -1,10 +1,11 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Sparkles, Check, X, ArrowRight, ShieldCheck, Zap } from "lucide-react";
 import GlassCard3D from "../components/ui/GlassCard3D";
 import Button3D from "../components/ui/Button3D";
+import * as fpixel from "@/lib/fpixel";
 
 const plans = [
   {
@@ -70,6 +71,13 @@ export default function PackagesPage() {
   const [billingCycle, setBillingCycle] = useState<"monthly" | "quarterly">(
     "monthly",
   );
+
+  useEffect(() => {
+    fpixel.event("ViewContent", {
+      content_name: "Growth Packages Page",
+      content_category: "Service Packages",
+    });
+  }, []);
 
   return (
     <main className="min-h-screen bg-[#fbfbfd] pt-32 pb-24 relative overflow-hidden">
@@ -174,6 +182,13 @@ export default function PackagesPage() {
                     <div className="pt-4 pb-6 border-b border-gray-100">
                       <Button3D
                         href="/contact"
+                        onClick={() => {
+                          fpixel.event("InitiateCheckout", {
+                            content_name: plan.name,
+                            content_category: "Growth Packages",
+                            plan_id: plan.id,
+                          });
+                        }}
                         variant={plan.popular ? "primary" : "glass"}
                         size="md"
                         fullWidth
